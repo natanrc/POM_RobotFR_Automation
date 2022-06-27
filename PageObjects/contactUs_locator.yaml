@@ -1,0 +1,7 @@
+#Contact Us Locator
+link_ContactUs: //a[@title="Contact Us"]
+txt_email: //input[@id="email"]
+txt_orderReference: //input[@id="id_order"]
+txt_message: //textarea[@id="message"]
+button_message: //button[@id="submitMessage"]
+cs_contactUs: //h1[@class="page-heading bottom-indent"]
