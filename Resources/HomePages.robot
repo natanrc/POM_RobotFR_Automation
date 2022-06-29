@@ -40,11 +40,23 @@ Verify Shopping Cart
     Element Should Contain      ${shopping_cart_page}               Your shopping cart    
     Click link                  ${link_home_page}  
 
+Verify Top Menu
+    [Documentation]             Verify Top Menu
+    Element Should Be Visible   ${top_menu}
+
 Verify Order Categori WOMAN
     [Documentation]             Verify link order category WOMAN
     Click link                  ${Link_cat_women}
     Element Should Contain      ${Cat_women_page}                       Women    
     Click link                  ${link_home_page} 
+
+Verify Product Order
+    [Documentation]             Verify Container Product Order
+    Element Should Be Visible   ${product_order}
+
+Verify Footer
+    [Documentation]             Verify Footer
+    Element Should Be Visible   ${footer}
 
 Close my Browser
     Close All Browsers

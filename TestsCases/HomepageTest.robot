@@ -20,6 +20,9 @@ Verify Home Page
     Verify Button Searh
     Verify Shopping Cart
     sleep       2s
+    Verify Top Menu
     Verify Order Categori WOMAN
     sleep       2s
+    Verify Product Order
+    Verify Footer
     Close my Browser
