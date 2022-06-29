@@ -18,6 +18,8 @@ Verify Homepage Title
 
 Verify Contact No
     [Documentation]             Verify Contact Number
+    #add test case id L01
+    [Tags]                      L01
     Element Should Be Visible   ${ContactNo} 
 
 Verify Logo

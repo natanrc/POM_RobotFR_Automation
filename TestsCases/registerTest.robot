@@ -15,5 +15,4 @@ Register Form Test
     Enter New Email             ${email}
     sleep       2s
     Click Button Sign Up
-    
     Close Browser
