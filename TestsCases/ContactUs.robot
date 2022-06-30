@@ -11,7 +11,7 @@ ${message}              dojobox write here
 
 *** Test Cases ***
 I Verify form contact us
-    Open my Browserku           ${SiteUrl}              ${Browser} 
+    Open my Browserku             ${SiteUrl}              ${Browser} 
     Clik Contact Us link  
     Select Subject Heading
     Input Email address           ${email}            

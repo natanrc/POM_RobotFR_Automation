@@ -1,0 +1,6 @@
+#Login Locator
+link_signIn: //a[@class="login"]
+txt_loginUserName: //input[@id="email"]
+txt_loginpassword: //input[@id="passwd"]
+button_Login: //button[@id="SubmitLogin"]
+myAccount_list: //div[@class="row addresses-lists"]

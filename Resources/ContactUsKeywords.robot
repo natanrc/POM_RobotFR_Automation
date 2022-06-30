@@ -13,7 +13,7 @@ Clik Contact Us link
     Click link        ${link_ContactUs}
 
 Select Subject Heading
-    Select From List By Label   id_contact          Webmaster
+    Select From List By Label   ${id_contact}          Webmaster
 
 Input Email address
     [Arguments]         ${email}
