@@ -1,5 +1,6 @@
 #Contact Us Locator
-link_ContactUs: //a[@title="Contact Us"]
+link_ContactUs: //div[@id="contact-link"]
+dropDown_subject: //select[@id="id_contact"]
 txt_email: //input[@id="email"]
 txt_orderReference: //input[@id="id_order"]
 txt_message: //textarea[@id="message"]

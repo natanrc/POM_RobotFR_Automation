@@ -1,19 +1,22 @@
 *** Settings ***
 Library         SeleniumLibrary
-variables       ../PageObjects/contactUs_locators.yaml
-
+variables       ../PageObjects/contactUs_locator.yaml
+Library         DebugLibrary
 
 *** Keywords ***
-Open my Browserku
+Open my Browser
     [Arguments]         ${SiteUrl}              ${Browser}
     Open Browser        ${SiteUrl}              ${Browser}
     Maximize Browser Window
 
-Clik Contact Us link
-    Click link        ${link_ContactUs}
+#Clik Contact Us link
+#    Click Element      ${link_ContactUs}
 
 Select Subject Heading
-    Select From List By Label   ${id_contact}          Webmaster
+    #debug
+    Element Should Not Be Visible       ${dropDown_subject}
+    Select From List By Index           ${dropDown_subject}        2
+    List Selection Should Be            ${dropDown_subject}        Webmaster
 
 Input Email address
     [Arguments]         ${email}
