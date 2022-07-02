@@ -1,17 +1,9 @@
 *** Settings ***
 Library         SeleniumLibrary
 variables       ../PageObjects/myAccount_locators.yaml
-
+Library         DebugLibrary             
 
 *** Keywords ***
-Open my Browser
-    [Arguments]         ${SiteUrl}              ${Browser}
-    Open Browser        ${SiteUrl}              ${Browser}
-    Maximize Browser Window
-
-Clik Sign Input
-    Click link        ${link_signIn}
-
 Enter UserName
     [Arguments]         ${username}
     Input Text          ${txt_loginUserName}        ${username}     
@@ -24,11 +16,7 @@ Click Button Sign In
     Click Button        ${button_Login}
 
 Verify Succesfull Login
-    Wait Until Element Contains     My account - My Store
+    Wait Until Element Contains     //div[class="header_user_info"]                 Nataniel Tondok
 
-Verify my account list
-    [Documentation]             Verify my account list
-    Element Should Be Visible   ${myAccount_list}
-
-Close Browser
-    Close All Browsers
+Verify list
+    Element Should Contain          //div[@class="col-xs-12 col-sm-6 col-lg-4"]

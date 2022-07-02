@@ -1,21 +1,22 @@
 *** Settings ***
 Library         SeleniumLibrary
 Resource        ../Resources/LoginKeyword.robot
+Suite Setup                         Open Browser                     ${SiteUrl}             ${Browser}
+Suite Teardown                      Close Browser
 
 *** Variables ***
 ${Browser}      Chrome
-${SiteUrl}      http://automationpractice.com/index.php
+${SiteUrl}      http://automationpractice.com/index.php?controller=authentication&back=my-account
 ${user}         natantondok@gmail.com
 ${pwd}          P@ss123456    
 
 
 *** Test Cases ***
 Verification My Account
-    Open my Browser             ${SiteUrl}              ${Browser} 
-    Clik Sign Input
+    #Clik Sign Input
+    Maximize Browser Window
     Enter UserName              ${user}
     Enter Password              ${pwd}
     Click Button Sign In
     Verify Succesfull Login
-    Verify my account list
-    Close Browser
+    #Verify list
