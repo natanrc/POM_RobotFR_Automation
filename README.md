@@ -15,5 +15,6 @@ Selenium Library:
 # Test Result/Test Cases:
 
 1) <a href="https://raw.githack.com/natanrc/POM_RobotFR_Automation/main/TC_Login_report.html">validate menu login page</a>
+2) <a href="https://raw.githack.com/natanrc/POM_RobotFR_Automation/main/TC_Contactus_report.html">validate menu Contact Us</a>
 
 #
