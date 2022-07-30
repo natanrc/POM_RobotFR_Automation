@@ -12,3 +12,8 @@ Selenium Library:
   ----
     https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html
   ----
+# Test Result/Test Cases:
+
+1) <a href="https://raw.githack.com/natanrc/POM_RobotFR_Automation/main/TC_Login_report.html">validate menu login page</a>
+
+#
